@@ -1,0 +1,138 @@
+html{height: 100%;width: 100%;}body{display: flex; align-items: center; justify-content: center; height: 100%;width: 100%; background-color: black;}
+.wrap{
+    display: flex; align-items: center; justify-content: center;flex-direction: column;flex-wrap: wrap;
+    width: auto; height: auto;
+}
+li,ul,a,div{
+    all:unset;
+    border: 1px solid rgb(255, 255, 255);
+    color:white;
+}
+a:hover{
+    font-weight: bolder;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    
+}
+footer{
+    width: 100vw;
+    height: 20vh;
+}
+
+header,section,footer{
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+.intro{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_img{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.main_img{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    
+}
+.main_img>a{
+    width: 20vw;
+    margin: 2vw;
+    animation: moving 20s infinite alternate-reverse;
+}
+a,img{
+    width: inherit;
+    height: inherit;
+    background: cover no-repeat center;
+}
+
+@keyframes moving{
+    to{
+
+    }
+    from{
+        transform: translateX(-100vw);
+    }
+}
+.main_img>a:hover,.main_img>a>img:hover{
+    animation-play-state: paused;
+}
+.explaination{
+    text-align: center;
+}
+.best_board{
+    display: flex;
+    border: 5px solid white;
+    width: 100%;
+    height: 20vw;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 20vw;
+}
+.title_img{
+    width: 15vw;
+    height: 15vw;
+}
+.board_container{
+    display: flex;
+}    
+.board_container>div{
+    border: 1px solid white;
+    text-align: center;
+}
+.board_num{
+    width: 10vw;
+}
+.board_title{
+    width: 20vw;
+}
+.board_content{
+    width: 40vw;
+}
+.board_writer{
+    width: 6vw;
+}
+.open_forum{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.pagingnation{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.pagingnation>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagingnation>div>a{
+    border: 1px solid rgb(255, 255, 255);
+    width: 5vw;
+    height: 3vw;
+    text-align: center;
+    color: white;
+}
+a:hover,img:hover{
+    transform: scale(120%);
+}
+.explaination{
+    margin: 10px;
+}

@@ -1,0 +1,27 @@
+.boxlogo{
+    transform-style: preserve-3d;
+    width: 5vw;
+    height: 5vw;
+    border: 1px solid blue;
+    float: left;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(30deg) rotateY(30deg) perspective(500px);
+
+}
+.boxlogo>div{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+}
+.logo_front{
+    border: 1px solid rebeccapurple;
+    transform: translateZ(2.5vw) perspective(500px);
+}
+.logo_back{
+    border: 1px solid red;
+    transform: translateZ(-2.5vw) perspective(500px);
+}
