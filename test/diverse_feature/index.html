@@ -6,6 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="kakao_area">
+        <span>localhost9090에서 작동함 수정가능</span>
+    <div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=여기에 키!&libraries=services"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+    </div>
     <span class="clock_area">
         <span class="clock">시계</span>
     </span>
@@ -14,6 +28,9 @@
             위치
         </span>
     </span>
+
+
+
     
     <script src="resouce/js/my_api_key.js"></script>
     <script src="resouce/js/clock.js"></script>
