@@ -10,6 +10,3 @@ git commit -am "메시지"
 git log : show your history 
 git remote add origin (주소)
 
-@requireargecontructor  : di 
-@responsebody : not templates, just data 
-
